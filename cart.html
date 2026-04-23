@@ -28,9 +28,30 @@
 
       <div id="cartItems"></div>
       <h3 id="cartTotal"></h3>
+      <div class="cart-actions">
+  <button id="buyNowBtn" class="btn btn--primary">Buy Now</button>
+
+  <div id="paymentOptions" class="payment hidden">
+    <h4>Select Payment Method</h4>
+
+    <label>
+      <input type="radio" name="payment" value="upi"> UPI
+    </label>
+    <label>
+      <input type="radio" name="payment" value="card"> Credit/Debit Card
+    </label>
+    <label>
+      <input type="radio" name="payment" value="cod"> Cash on Delivery
+    </label>
+
+    <button id="confirmPayment" class="btn btn--secondary">
+      Confirm Payment
+    </button>
+  </div>
+</div>
     </section>
   </main>
-
+  
   <script src="js/cart.js"></script>
 </body>
 </html>

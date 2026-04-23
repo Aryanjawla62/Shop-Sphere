@@ -73,3 +73,23 @@
 .btn--primary:hover {
   background-color: #1e40af;
 }
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.payment {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.payment label {
+  display: block;
+  margin: 8px 0;
+}
+
+.hidden {
+  display: none;
+}

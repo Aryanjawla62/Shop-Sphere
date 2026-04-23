@@ -32,3 +32,33 @@ function renderCart() {
 }
 
 renderCart();
+
+const buyNowBtn = document.getElementById("buyNowBtn");
+const paymentOptions = document.getElementById("paymentOptions");
+const confirmPayment = document.getElementById("confirmPayment");
+
+buyNowBtn.addEventListener("click", () => {
+  if (cart.length === 0) {
+    alert("Cart is empty!");
+    return;
+  }
+  paymentOptions.classList.remove("hidden");
+});
+
+confirmPayment.addEventListener("click", () => {
+  const selected = document.querySelector('input[name="payment"]:checked');
+
+  if (!selected) {
+    alert("Please select a payment method");
+    return;
+  }
+
+  alert(`Payment successful via ${selected.value.toUpperCase()} 🚀`);
+
+  // Clear cart after purchase
+  cart = [];
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
+
+  paymentOptions.classList.add("hidden");
+});
