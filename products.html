@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | ShopSphere</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav">
+      <h1 class="nav__logo">ShopSphere</h1>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="products">
+      <h2 class="section__title">All Products</h2>
+
+      <div id="productList" class="product-grid">
+        <!-- Products will be rendered by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
